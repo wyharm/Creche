@@ -21,6 +21,22 @@
   }
 }
 
+@keyframes shake2 {
+  0% {
+    transform: rotate(2deg);
+  }
+
+
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+
 
 .navbar-nav {
   padding: 0;
@@ -110,9 +126,16 @@ body:before {
 
 
 }
-.deuxiemeH{
+
+.deuxiemeH {
   font-family: "White Pinky";
   font-size: 30px;
+
+}
+.troisiemeH{
+  font-family: "White Pinky";
+  font-size: 20px;
+
 
 }
 
@@ -164,7 +187,7 @@ body:before {
   animation: anim 20s linear infinite;
   -moz-animation: anim 20s linear infinite;
   -webkit-animation: anim 20s linear infinite;
-  
+
 
 }
 
@@ -315,38 +338,37 @@ video {
   height: 500px;
 }
 
-.img-fluid{
+.photoequipe {
+  position: relative;
+  top: -40px;
 
+  background: white;
 
-    background: white;
-    
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 10px 80px 10px;
-    margin: 0 0 27px 30px;
-    width: 300px;
-    height: 300px;
-    color: #8B8B8B;
-    transform: rotate(4deg);
-   
-    border-radius: 5px;
-    content:'test';
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 10px 80px 10px;
+  margin: 0 0 27px 30px;
+  width: 300px;
+  height: 300px;
+  color: #8B8B8B;
+  transform: rotate(5deg);
+
+  border-radius: 5px;
+  content: 'test';
+ 
 }
-.row1{
- 
-  padding: 20px;
+
+
+.row1 {
   border-radius: 100% 100% 0% 0% / 10%;
-  border-bottom:#B5EAD7 solid 30px;
-  
- 
   background: #B5EAD7;
 }
-.row2{
+
+.row2 {
   background: #fec051;
 }
 
-.row3{
-  padding: 20px;
-  border-radius: 0% 0% 100% 100% / 10%;
-  background: #FEC8D8;
+.row3 {
+  background: #957DAD;
 }
+
