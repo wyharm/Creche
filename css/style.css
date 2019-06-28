@@ -1,0 +1,352 @@
+@font-face {
+  font-family: 'White Pinky Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('White Pinky Regular'), url('/img/fonts/White Pinky.woff') format('woff'), url('/img/fonts/White\ Pinky.otf') format('truetype'), url('/img/fonts/White\ Pinky.ttf') format('truetype');
+
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg);
+  }
+
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+
+.navbar-nav {
+  padding: 0;
+  height: 100vw;
+  background-color: #ff7979;
+  color: white;
+}
+
+.navbar {
+
+  background: rgba(0, 0, 0, 0);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 121, 121, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.Hcolorpurple {
+  color: #957DAD;
+  font-family: "White Pinky";
+  font-weight: bold;
+}
+
+.Hcolorgreen {
+  font-family: "White Pinky";
+  color: #B5EAD7;
+  font-weight: bold;
+}
+
+.Hcoloryellow {
+  color: #fec051;
+  font-family: "White Pinky";
+  font-weight: bold;
+}
+
+.Hcolorpink {
+  color: #FEC8D8;
+  font-family: "White Pinky";
+  font-weight: bold;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background: linear-gradient(to bottom, #957DAD, #B5EAD7, #fec051, #FEC8D8, #FA709A);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), white 95%);
+}
+
+
+
+
+.premierH {
+  font-family: "White Pinky";
+  font-size: 60px;
+  color: #ff7979;
+  font-weight: 900;
+  margin-top: 10px;
+
+
+}
+.deuxiemeH{
+  font-family: "White Pinky";
+  font-size: 30px;
+
+}
+
+
+#image {
+  height: 300px;
+  width: 300px;
+  background: url('/img/LAPIN_0000.png') 0px 0px;
+}
+
+
+
+.circle {
+  background-color: #F80;
+  border: 3px solid #FFF;
+  border-radius: 18px;
+  box-shadow: 0 0 2px #888;
+  height: 30px;
+  width: 30px;
+}
+
+.card-title {
+
+  font-family: "White Pinky";
+  font-size: 30px;
+  color: #B5EAD7;
+  font-weight: 900;
+}
+
+
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/img/babysleeping.png") no-repeat center fixed;
+  background-size: cover;
+  opacity: .3;
+  animation: anim 20s linear infinite;
+  -moz-animation: anim 20s linear infinite;
+  -webkit-animation: anim 20s linear infinite;
+  
+
+}
+
+@keyframes anim {
+
+  50% {
+    transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.page-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.page-content h1 {
+  color: #ff7979;
+
+  font-size: 10em;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-family: "White Pinky";
+}
+
+.page-content p {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "White Pinky";
+  font-size: 2em;
+}
+
+
+.carousel-inner {
+
+  border-radius: 10px;
+}
+
+
+
+#firstcontainer {
+
+  background-color: white;
+  border-radius: 10PX;
+}
+
+#deuxiemecontainer {
+  background-color: #B5EAD7;
+  border-radius: 10PX;
+  padding: 10px;
+
+}
+
+
+
+#presentation {
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 100% 100% / 10%;
+  border-bottom: white solid 30px;
+
+}
+
+
+
+.projets1 {
+
+  background-color: #957DAD;
+  border-radius: 10PX;
+
+}
+
+.projets2 {
+
+  background-color: #fec051;
+  border-radius: 10PX;
+
+}
+
+.projets3 {
+
+  background-color: #B5EAD7;
+  border-radius: 10PX;
+
+}
+
+.projetsH {
+  color: white;
+  font-family: "White Pinky";
+  font-weight: bold;
+
+}
+
+.projet-icons {
+  animation: shake 1s infinite;
+}
+
+
+
+
+
+
+
+#ballons {
+
+  position: absolute;
+  top: 1000px;
+  z-index: -3;
+}
+
+
+
+.journeetype {
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 100% 100% 100% 100% / 10%;
+  border-bottom: white solid 30px;
+
+}
+
+video {
+
+  background-size: 800px;
+  height: 75vw;
+}
+
+.overflow-auto {
+
+  overflow: scroll;
+  height: 500px;
+}
+
+.img-fluid{
+
+
+    background: white;
+    
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 10px 80px 10px;
+    margin: 0 0 27px 30px;
+    width: 300px;
+    height: 300px;
+    color: #8B8B8B;
+    transform: rotate(4deg);
+   
+    border-radius: 5px;
+    content:'test';
+}
+.row1{
+ 
+  padding: 20px;
+  border-radius: 100% 100% 0% 0% / 10%;
+  border-bottom:#B5EAD7 solid 30px;
+  
+ 
+  background: #B5EAD7;
+}
+.row2{
+  background: #fec051;
+}
+
+.row3{
+  padding: 20px;
+  border-radius: 0% 0% 100% 100% / 10%;
+  background: #FEC8D8;
+}
