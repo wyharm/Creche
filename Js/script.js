@@ -40,11 +40,6 @@ else {
 });
 
 
-var map;
-      function initMap() {
-        map = new google.maps.Map(
-            document.getElementById('carte'),
-            {center: new google.maps.LatLng(-33.91722, 151.23064), zoom: 16});
-        }
+
 
 

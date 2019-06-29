@@ -61,7 +61,7 @@
 p {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .Hcolorpurple {
@@ -123,7 +123,10 @@ body:before {
   color: #ff7979;
   font-weight: 900;
   margin-top: 10px;
-
+  background-image: url('/img/');
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -132,7 +135,8 @@ body:before {
   font-size: 30px;
 
 }
-.troisiemeH{
+
+.troisiemeH {
   font-family: "White Pinky";
   font-size: 40px;
   font-weight: bold;
@@ -201,7 +205,7 @@ body:before {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("/img/babysleeping.png") no-repeat center fixed;
+  background: url("../img/babysleeping.png") no-repeat center fixed;
   background-size: cover;
   opacity: .3;
   animation: anim 20s linear infinite;
@@ -249,6 +253,139 @@ body:before {
   font-family: "White Pinky";
 }
 
+@media (max-width: 575.98px) {
+  .page-content h1 {
+    font-size: 5em;
+    margin-right: 0px;
+  }
+
+  .projets1 {
+    margin-bottom: 15px;
+  }
+
+  .projets2 {
+    margin-bottom: 15px;
+  }
+
+  .projets3 {
+    margin-bottom: 15px;
+  }
+
+  #typeday {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  #firstHpresentation {
+    font-size: 20px;
+  }
+
+  #secondHpresentation {
+    font-size: 15px;
+  }
+
+  .photoequipe {
+    top: 50px;
+    left: -10px;
+  }
+
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .page-content h1 {
+    font-size: 5em;
+    margin-right: 0px;
+  }
+
+  .projets1 {
+    margin-bottom: 15px;
+  }
+
+  .projets2 {
+    margin-bottom: 15px;
+  }
+
+  .projets3 {
+    margin-bottom: 15px;
+  }
+
+  #typeday {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  #firstHpresentation {
+    font-size: 20px;
+  }
+
+  #secondHpresentation {
+    font-size: 15px;
+  }
+
+  .photoequipe {
+
+    top: 50px;
+
+  }
+}
+
+
+@media (min-width:768px)and (max-width: 991.98px) {
+  .projets1 {
+    margin-bottom: 15px;
+  }
+
+  .projets2 {
+    margin-bottom: 15px;
+  }
+
+  .projets3 {
+    margin-bottom: 15px;
+  }
+
+  #typeday {
+    position: relative;
+    bottom: 70px;
+  }
+
+  #firstHpresentation {
+    font-size: 40px;
+  }
+
+  #secondHpresentation {
+    font-size: 30px;
+  }
+
+  .photoequipe {
+
+    top: 50px;
+  }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .photoequipe {
+
+    top: -40px;
+  }
+
+
+
+}
+
+@media (min-width: 1200px) {
+  .photoequipe {
+
+    top: -25px;
+  }
+}
+
+
+
 .page-content p {
   color: #fff;
   margin-bottom: 20px;
@@ -266,7 +403,7 @@ body:before {
 
 #firstcontainer {
 
-  background-color: white;
+  background-color: rgb(255, 255, 244);
   border-radius: 10PX;
 }
 
@@ -281,7 +418,7 @@ body:before {
 
 #presentation {
 
-  background-color: white;
+  background-color: rgb(255, 255, 244);
   padding: 20px;
   border-radius: 0 0 100% 100% / 10%;
   border-bottom: white solid 30px;
@@ -293,7 +430,9 @@ body:before {
 .projets1 {
 
   background-color: #957DAD;
-  border-radius: 10PX;
+  border-radius: 10px;
+
+
 
 }
 
@@ -302,6 +441,7 @@ body:before {
   background-color: #fec051;
   border-radius: 10PX;
 
+
 }
 
 .projets3 {
@@ -309,16 +449,24 @@ body:before {
   background-color: #B5EAD7;
   border-radius: 10PX;
 
+
 }
+
+
 
 .projetsH {
   color: white;
   font-family: "White Pinky";
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 
 }
 
 .projet-icons {
+  display: flex;
+  justify-content: center;
+
   animation: shake 1s infinite;
 }
 
@@ -327,22 +475,18 @@ body:before {
 
 
 
+#titrescroll {
 
-#ballons {
-
-  position: absolute;
-  top: 1000px;
-  z-index: -3;
+  color: white;
 }
-
 
 
 .journeetype {
 
-  background-color: white;
+  background-color: #fffff4;
   padding: 20px;
   border-radius: 100% 100% 100% 100% / 10%;
-  border-bottom: white solid 30px;
+  border-bottom: #FEFFF3 solid 30px;
 
 }
 
@@ -356,11 +500,12 @@ video {
 
   overflow: scroll;
   height: 500px;
+
 }
 
 .photoequipe {
   position: relative;
-  top: -40px;
+
 
   background: white;
 
@@ -375,7 +520,7 @@ video {
 
   border-radius: 5px;
   content: 'test';
- 
+
 }
 
 
@@ -391,19 +536,30 @@ video {
 .row3 {
   background: #957DAD;
 }
-.row4{
+
+.row4 {
   background: #9EE09E;
   border-radius: 0% 0% 100% 100% / 10%;
 }
-.facebook{
+
+.facebook {
   width: 50px;
   height: 50px;
 }
 
-.soustitre{
-font-size: 30px;
+.soustitre {
+  font-size: 30px;
 }
-#findus{
 
-  background: #C9AA9D;
+#findus {
+
+  background: rgb(201, 170, 160);
+
+  border: #C9AA9D solid 30px;
+
+}
+
+.card {
+
+  border-radius: 10px;
 }
