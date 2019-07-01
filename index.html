@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>White Pinky</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff7979" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    
+    <div>
+      <a href="#" class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
 
-
-
-
-
-
-
-
-  
-
-      <div class="landing-page">
-        <div class="page-content">
-          <h1>TiMoun</h1>
-          <p id="first">Crèche situé à Villetaneuse</p>
+      <div class="menu">
+        <div class="contenant">
+          <a id="button" href="#" class="closeBtn">&times;</a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </div>
+
+    <div class="landing-page">
+      <div class="page-content">
+        <h1>TiMoun</h1>
+        <p id="first">Crèche situé à Villetaneuse</p>
+      </div>
+    </div>
+    </div>
+  </header>
 
   <section id="presentation">
     <div class="container p-0 mt-2 mb-2">
@@ -54,21 +71,21 @@
             </div>
           </div>
         </div>
-       
+
 
         <div id="firstcontainer" class="col-lg-6 col-sm-12">
           <h2 class="premierH">Notre crèche</h2>
-          <p data-aos="zoom-in" class="paragraph">La crèche Timoun est une structure privée accueillant des
+          <p class="paragraph">La crèche Timoun est une structure privée accueillant des
             enfants de 6 semaines à 4 ans non scolarisé en accueil régulier, occasionnel pour répondre à un besoin
             ponctuel. Une place d’urgence est disponible, ce qui permet aux parents de chercher sereinement une solution
             pérenne.
 
           </p>
-          <p data-aos="zoom-in" class="paragraph">Le rôle de la micro-crèche est d’assurer la sécurité physique,
+          <p class="paragraph">Le rôle de la micro-crèche est d’assurer la sécurité physique,
             affective et psychologique de tous les enfants. Accueillir chaque enfant et ses parents avec leurs
             particularités individuelles. Favoriser l’éveil, le bien-être et l’autonomie de l’enfant. Accompagner
             l’enfant dans ses premiers pas vers la socialisation.</p>
-          <p data-aos="zoom-in" class="paragraph">La structure est un lieu de vie confortable d’une surface de 136 m²,
+          <p class="paragraph">La structure est un lieu de vie confortable d’une surface de 136 m²,
             comprenant une grande salle de jeux de 60 m² où l’aménagement de l’espace a été entièrement pensé et aménagé
             afin de répondre aux besoins des enfants (coin bébé, coin bricolage, voitures, coin poupée, cuisine, espace
             lecture, espace pour les ateliers dirigés…)
@@ -126,20 +143,19 @@
 
 
 
-
+  <!--JOURNEE TYPE-->
   <section class="journeetype">
     <div class="container-fluid">
       <div class="row">
-          <div class="image-animaux">
-              <img id="singe" src="/img/singe.png" alt="singe">
-              <img id="crocodile" src="/img/crocodile.png" alt="">
-            </div>
+        <div class="image-animaux">
+          <img id="singe" src="img/singe.png" alt="singe">
+          <img id="crocodile" src="img/crocodile.png" alt="">
+        </div>
         <div class="col-sm-12 col-lg-6 p-0 embed-responsive embed-responsive-4by3">
           <video autoplay loop muted id="video">
             <source class="embed-responsive-item" src="img/video.mp4" type="video/mp4">
-              
           </video>
-         
+
         </div>
 
         <div class="col-sm-12 col-lg-6 mt-5">
@@ -289,7 +305,10 @@
   <div class="container">
     <div class="row">
       <div class="col d-flex justify-content-center">
-        <h2 id="titreinformations" class="premierH">Informations pratiques</h2>
+        <h2 id="titreinformations" class="premierH mt-5 mb-5">Informations pratiques</h2>
+      </div>
+      <div id="giraflediv">
+        <img id="girafle" src="img/girafle.png" alt="girafle">
       </div>
     </div>
   </div>
@@ -313,15 +332,15 @@
             <div class="col-md-4 col-lg-4 informations1">
 
               <div class="d-flex">
-                <img class="img-fluid facebook m-2" src="/img/Circle-icons-smartphone.svg.png" alt="smartphone">
+                <img class="img-fluid facebook m-2" src="img/Circle-icons-smartphone.svg.png" alt="smartphone">
                 <p class="my-auto">01 43 19 54 76</p>
               </div>
               <div class="d-flex">
-                <img class="img-fluid facebook m-2" src="/img/map.png" alt="map">
+                <img class="img-fluid facebook m-2" src="img/map.png" alt="map">
                 <p class="my-auto">2 rue de l'université - Villetaneuse</p>
               </div>
               <div class="d-flex">
-                <img src="/img/Circle-icons-clock.svg.png" class="img-fluid facebook m-2" alt="">
+                <img src="img/Circle-icons-clock.svg.png" class="img-fluid facebook m-2" alt="">
                 <p class="my-auto">Horaires d'ouverture : 6h30 à 19h30 du lundi au vendredi</p>
               </div>
 
@@ -330,15 +349,15 @@
             <div class="col-md-4 col-lg-4 informations2">
 
               <div class="d-flex">
-                <img src="/img/iconfinder_mail_1055030.png" class="img-fluid facebook m-2" alt="">
+                <img src="img/iconfinder_mail_1055030.png" class="img-fluid facebook m-2" alt="">
                 <p class="my-auto">timoun_creche@gmail.com</p>
               </div>
               <div class="d-flex">
-                <img class="img-fluid facebook m-2" src="/img/Circle-icons-train.svg.png" alt="smartphone">
+                <img class="img-fluid facebook m-2" src="img/Circle-icons-train.svg.png" alt="smartphone">
                 <p class="my-auto"> T11 : "Université"</p>
               </div>
               <div class="d-flex">
-                <img class="img-fluid facebook m-2" src="/img/parking.png" alt="smartphone">
+                <img class="img-fluid facebook m-2" src="img/parking.png" alt="smartphone">
                 <p class="my-auto">Parking devant la crèche</p>
               </div>
 
@@ -366,7 +385,7 @@
     <div class="row">
       <div class="col d-flex flex-column">
         <h2 id="titrecontact" class="premierH mx-auto">Contactez-nous</h2>
-    <h3 id="paragraphcontact" class="deuxiemeH mx-auto">Pour toute demande d’inscription ou de renseignement</h3>
+        <h3 id="paragraphcontact" class="deuxiemeH mx-auto">Pour toute demande d’inscription ou de renseignement</h3>
       </div>
     </div>
   </div>
@@ -436,33 +455,44 @@
           </div>
         </div>
       </div>
+      <div id="demo">
+        <p id="image"></p>
+        <p id="image1"></p>
+      </div>
     </div>
+
   </section>
 
-<footer>
-<div class="container">
-    <div id="demo">
-        <p id="image" onclick="animateScript()"> </p>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mt-3">
+          <img class="facebook" src="img/iconfinder_facebook_834722.png" alt="">
+          <img class="mail facebook" src="img/iconfinder_mail_1055030.png" alt="">
+          <img class="facebook" src="img/iconfinder_twitter_circle_color_107170.png" alt="">
+          <p>Timoun © - 2019 - Tous droits réservés</p>
+        </div>
+        <div class="col text-center mt3 my-auto">
+          <h3 id="Hfooter" class="premierH">Timoun</h3>
+        </div>
+        <div class="col text-center mt-3">
+          <img class="facebook" src="img/Caisse_d_allocations_familiales_france_logo.svg.png" alt="">
+          <p>Crèche conventioné CAF</p>
+        </div>
       </div>
-  <div class="row">
-    <div class="col">
-      <img src="/img/iconfinder_facebook_834722.png" alt="">
-      <img src="/img/iconfinder_mail_1055030.png" alt="">
-      <img src="/img/iconfinder_twitter_circle_color_107170.png" alt="">
-
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <p>Réalisation : Wyharm</p>
+        </div>
+      </div>
     </div>
 
 
-  </div>
-</div>
 
 
 
 
-
-
-</footer>
-
+  </footer>
 
 
 
@@ -474,18 +504,19 @@
 
 
 
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="Js/script.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="Js/script.js"></script>
 </body>
 
 </html>
