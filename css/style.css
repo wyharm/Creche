@@ -145,7 +145,7 @@ p {
 
 
 body {
-  background: linear-gradient(to bottom, #957DAD, #B5EAD7, #fec051, #FEC8D8, #FA709A);
+  background: #FFDAC1;
   background-size: 100%;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -153,15 +153,7 @@ body {
   padding: 0;
 }
 
-body:before {
-  content: '';
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-  background: linear-gradient(to right bottom, #FEC8D8, white 95%);
-}
+
 
 
 
@@ -568,6 +560,12 @@ body:before {
     bottom: -56%;
   
   }
+  #image{
+    left: 38%;
+  }
+  #image1{
+    left: 46%;
+  } 
 }
 
 
@@ -812,6 +810,9 @@ footer {
 
   position: relative;
   z-index: 2;
+  overflow: hidden;
+  padding-bottom: 0px;
+  border-bottom-width: 0px;
 }
 
 #image {
@@ -819,14 +820,14 @@ footer {
   width: 256px;
   background: url('../img/LAPIN_0000.png') 0px 0px;
   position: absolute;
-  top: 100%;
+  transition-property: top;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  -webkit-transition-property: top;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
   z-index: 3;
-  left: 38%;
-  overflow-y: hidden;
-
-
-
-
+  
 }
 
 #image1 {
@@ -834,14 +835,15 @@ footer {
   width: 256px;
   background: url('../img/TIGRE_0000.png') 0px 0px;
   position: absolute;
-  top: 75%;
-  left: 46%;
-
-
+  transition-property: top;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  -webkit-transition-property: top;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  
 }
-#demo{
-  overflow: hidden;
-}
+
 #Hfooter {
   font-size: 40px;
 
@@ -851,6 +853,7 @@ position: relative;
 }
 #girafle{
 position: absolute;
-
-
+}
+#paragraphmodalite{
+margin-bottom: 2rem;
 }
