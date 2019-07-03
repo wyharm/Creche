@@ -42,92 +42,27 @@
 
 /*navbar*/
 
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
+#navbar1{
+  transition: top 0.3s;
+  opacity: 0.8;
+ 
+}
+
+
+.navbar-brand{
+
   font-family: 'White Pinky Regular';
-  background-color: #ff7979;
-}
-.logo a{
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 30px;
-  text-decoration: none;
-  font-family: 'Indie Flower', cursive;
   font-weight: bold;
-}
-.navliens{
-  position: absolute;
-  z-index: 34;
-  height: 92vh;
-  top: 8vh;
-  background-color: #ff7979;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in;
-}
-.navliens li{
-  list-style: none;
-  opacity: 1;
-  font-size: 80px;
+  color: #ff7979;
 
 }
-.navliens a{
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight:bold;
-  font-size: 80px;
+.nav-link{
+  font-family: 'White Pinky Regular'; 
+  font-size: 20px;
 }
-#lien1:hover{
-  color: #957DAD;
-}
-#lien2:hover{
-  color: #9EE09E;
-}
-#lien0:hover{
-  color: #fec051;
-}
-#lien3:hover{
-  color: #76ADA8;
-}
-#lien4:hover{
-  color: #FFDAC1;
-}
-#lien5:hover{
-  color: #957DAD;
-}
-.burger div{
-  border-radius: 5px;
-  margin: 6px 0px;
-  width: 35px;
-  height: 5px;
-  background-color: white;
-}
-.burger{
-  display: block;
-  cursor:pointer;
-}
-.nav-active{
-  transform: translateX(0%);
 
-}
-@keyframes navlinkFade{
-  from{
-    opacity: 0;
-    transform:translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform:translateX(0px);
-  }
-}
+
+
 
 section {
   padding-left: 0px;

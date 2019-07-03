@@ -2,7 +2,7 @@ AOS.init({
   duration: 1200,
 })
 
-const navSlide = () => {
+/*const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.navliens');
   
@@ -10,18 +10,17 @@ const navSlide = () => {
     nav.classList.toggle('nav-active');
   });
 }
-navSlide();
-
-
-
-
-
-
-
-
-
-
-
+navSlide();*/
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar1").style.top = "0";
+  } else {
+    document.getElementById("navbar1").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
 
 
 function stopAnimate() {clearInterval(time);
