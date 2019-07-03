@@ -297,6 +297,9 @@ body {
   #disponibilite{
     font-size: 30px;
   }
+  #girafle{
+    display: none;
+  }
 }
 
 
