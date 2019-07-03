@@ -34,75 +34,99 @@
     transform: rotate(2deg);
   }
 }
-
+*{
+  margin: 0;
+  padding:0px;
+  box-sizing: border-box;
+}
 
 /*navbar*/
-.hamburger {
-  position: absolute;
-  top: 20%;
-  left: 90%;
-  z-index: 4;
-}
 
-.hamburger div {
-  width: 35px;
-  height: 5px;
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'White Pinky Regular';
   background-color: #ff7979;
-  border-radius: 5px;
-  margin: 6px 0px;
 }
-
-.contenant {
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: fixed;
+.logo a{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+.navliens{
+  position: absolute;
+  z-index: 34;
+  height: 92vh;
+  top: 8vh;
+  background-color: #ff7979;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  z-index: 6;
-  overflow-x: hidden;
-  transition: 0.5s;
-  background: #ff7979;
+  width: 100vw;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
 }
+.navliens li{
+  list-style: none;
+  opacity: 1;
+  font-size: 80px;
 
-.nav {
-  list-style-type: none;
 }
-
-.nav-item {
-  margin: 10px;
-  text-align: center;
+.navliens a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  font-size: 80px;
 }
-
-.nav-link {
-  font-size: 38px;
-  padding: 10px;
+#lien1:hover{
+  color: #957DAD;
+}
+#lien2:hover{
+  color: #9EE09E;
+}
+#lien0:hover{
+  color: #fec051;
+}
+#lien3:hover{
+  color: #76ADA8;
+}
+#lien4:hover{
+  color: #FFDAC1;
+}
+#lien5:hover{
+  color: #957DAD;
+}
+.burger div{
+  border-radius: 5px;
+  margin: 6px 0px;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+}
+.burger{
   display: block;
-  color: white;
-  font-family: "Dosis", sans-serif;
-  text-decoration: none;
-  transition: 0.3s;
+  cursor:pointer;
 }
+.nav-active{
+  transform: translateX(0%);
 
-.nav-link:hover,
-.closeBtn:hover {
-  opacity: 0.5;
-  transform: scale(1.2);
 }
-
-.closeBtn {
-  position: absolute;
-  top: 0;
-  right: 45px;
-  font-size: 5rem;
-  color: white;
-  text-decoration: none;
-  font-family: "Dosis", sans-serif;
-  transition: 0.3s;
-  color: white;
+@keyframes navlinkFade{
+  from{
+    opacity: 0;
+    transform:translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform:translateX(0px);
+  }
 }
 
 section {
@@ -110,12 +134,15 @@ section {
   padding-right: 0px;
 }
 
-
-
 p {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
   font-size: 16px;
+}
+#telephone{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .Hcolorpurple {
@@ -150,7 +177,7 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 
 
@@ -168,13 +195,11 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-
 }
 
 .deuxiemeH {
   font-family: 'White Pinky Regular';
   font-size: 30px;
-
 }
 
 .troisiemeH {
@@ -182,53 +207,15 @@ body {
   font-size: 40px;
   font-weight: bold;
   color: white;
-
-
 }
 
 
 
 
-
-
-.circle {
-  background-color: #ff7979;
-  border: 3px solid #FFF;
-  border-radius: 18px;
-  box-shadow: 0 0 2px #888;
-  height: 30px;
-  width: 30px;
-}
-
-.circle1 {
-  background-color: #9EE09E;
-  border: 3px solid #FFF;
-  border-radius: 18px;
-  box-shadow: 0 0 2px #888;
-  height: 30px;
-  width: 30px;
-}
-
-.circle2 {
-  background-color: #fec051;
-  border: 3px solid #FFF;
-  border-radius: 18px;
-  box-shadow: 0 0 2px #888;
-  height: 30px;
-  width: 30px;
-}
-
-.card-title {
-
-  font-family: 'White Pinky Regular';
-  font-size: 30px;
-  color: #B5EAD7;
-  font-weight: 900;
-}
 
 
 .landing-page {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: white;
   position: relative;
@@ -240,8 +227,8 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: url("../img/babysleeping.jpg") no-repeat center fixed;
   background-size: cover;
   opacity: .3;
@@ -356,7 +343,7 @@ body {
 
   #singe {
     width: 200px;
-    top: 200px;
+    top: 30%;
     left: -20px;
     z-index: 0;
     transform: rotate(-10deg)
@@ -364,9 +351,15 @@ body {
 
   #crocodile {
     width: 350px;
-    top: 1000px;
+    bottom: 60%;
     left: 200px;
     z-index: 8;
+  }
+  #image1{
+    left: 35%;
+  }
+  #disponibilite{
+    font-size: 30px;
   }
 }
 
@@ -420,8 +413,11 @@ body {
 
   #crocodile {
     width: 350px;
-    top: 1000px;
+    top: 95%;
     left: 200px;
+  }
+  #image1{
+    left: 30%;
   }
 }
 
@@ -471,22 +467,39 @@ body {
 
   #crocodile {
     width: 350px;
-    top: 1100px;
+    top: 94%;
     left: 200px;
+  }
+  #image1{
+    right: 10%;
+  }
+  #image{
+    right: 0%;
+
+  }
+  #girafle{
+   overflow: hidden;
+    z-index: 1;
+  }
+  #equipe{
+    z-index: -2;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .photoequipe {
-
     top: -40px;
   }
-
+  #firstHpresentation{
+    font-size: 50px;
+  }
+  #secondHpresentation{
+    margin-bottom: 20px;
+  }
   .Fermetures {
     position: relative;
-    top: 120px;
+    top:30%;
   }
-
   .informations1 {
     position: relative;
     left: 10px;
@@ -510,19 +523,20 @@ body {
   #crocodile {
     width: 350px;
     top: 600px;
-    left: 200px;
+    left: 150px;
   }
+  #image1{
+    left: 20%; 
+  } 
 }
 
 @media (min-width: 1200px) {
   .photoequipe {
-
     top: -25px;
   }
 
   #secondHpresentation {
-
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   }
 
   .Fermetures {
@@ -561,10 +575,12 @@ body {
   
   }
   #image{
+    
     left: 38%;
   }
   #image1{
     left: 46%;
+    
   } 
 }
 
@@ -820,10 +836,10 @@ footer {
   width: 256px;
   background: url('../img/LAPIN_0000.png') 0px 0px;
   position: absolute;
-  transition-property: top;
+  transition-property: bottom;
   transition-duration: 1s;
   transition-timing-function: ease;
-  -webkit-transition-property: top;
+  -webkit-transition-property: bottom;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease;
   z-index: 3;
@@ -835,10 +851,10 @@ footer {
   width: 256px;
   background: url('../img/TIGRE_0000.png') 0px 0px;
   position: absolute;
-  transition-property: top;
+  transition-property: bottom;
   transition-duration: 1s;
   transition-timing-function: ease;
-  -webkit-transition-property: top;
+  -webkit-transition-property: bottom;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease;
   
@@ -856,4 +872,9 @@ position: absolute;
 }
 #paragraphmodalite{
 margin-bottom: 2rem;
+}
+.btn {
+  background-color: #FEC8D8;
+  color: white;
+  border-color: #FEC8D8;
 }

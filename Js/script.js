@@ -1,20 +1,23 @@
-/*AOS.init({
+AOS.init({
   duration: 1200,
-})*/
+})
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.navliens');
+  
+  burger.addEventListener('click',()=> {
+    nav.classList.toggle('nav-active');
+  });
+}
+navSlide();
 
 
 
 
 
-$(document).ready(function(){
-  $(".menu").hide();
-    $(".hamburger").click(function(){
-        $(".menu").fadeIn(500);
-    });
-      $(".closeBtn").click(function(){
-        $(".menu").fadeOut(500);
-    });
-});
+
+
 
 
 
@@ -44,30 +47,27 @@ function animateScript() {
 
 
 
+let mq = window.matchMedia('@media (min-width: 1200px');
+let mq1 = window.matchMedia('@media (min-width: 992px) and (max-width: 1199.98px)');
+let mq2 = window.matchMedia('@media (min-width:768px)and (max-width: 991.98px)');
+let mq3 = window.matchMedia('@media (min-width: 576px) and (max-width: 767.98px)');
+let mq4 = window.matchMedia('@media (max-width: 575.98px)');
 
-window.addEventListener('scroll',() => {
 
-  let scrolled = window.scrollY;
-  console.log(scrolled);
+window.onscroll = function(ev) {
   
-  if (scrolled >= 5161) {
-  document.getElementById("image").style.top='72%';
-  document.getElementById("image1").style.top='72%';
-  animateScript();
-  
+  if((mq) && ((window.innerHeight + window.scrollY) >= document.body.offsetHeight)) {
+    document.getElementById("image1").style.bottom='-7%';
+    document.getElementById("image").style.bottom='-7%';
+    animateScript();
   }
-  else {
-  document.getElementById("image1").style.top='100%';
-  document.getElementById("image").style.top='100%';
-  stopAnimate();
+  else{
+    document.getElementById("image1").style.bottom='-30%';
+    document.getElementById("image").style.bottom='-30%';
+    stopAnimate();
   }
-  
-  
-  });
 
-
-
-
+}
 
 
 

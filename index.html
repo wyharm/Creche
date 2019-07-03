@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>White Pinky</title>
+  <title>Timoun</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ff7979" />
@@ -11,39 +11,34 @@
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:600,700" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div>
-      <a href="#" class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </a>
+          <nav>
+              <div class="logo">  
+                  <a href="tel:+33711223344"> 07 11 22 33 44</a>
+              </div>
+              <ul class="navliens">
+                  <li><a id="lien0" class="links" href="#presentation">Presentation</a></li>
+                  <li><a id="lien1" href="#notreconcept">Notre Concept</a></li>
+                  <li><a id="lien2" href="#">Une Journée type</a></li>
+                  <li><a id="lien3" href="#">Notre Equipe</a></li>
+                  <li><a id="lien4" href="#">Informations Pratiques</a></li>
+                  <li><a id="lien5" href="#">Nous Contactez</a></li>
+              </ul>
+<div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
 
-      <div class="menu">
-        <div class="contenant">
-          <a id="button" href="#" class="closeBtn">&times;</a>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+     
     <div class="landing-page">
       <div class="page-content">
         <h1>TiMoun</h1>
@@ -75,17 +70,17 @@
 
         <div id="firstcontainer" class="col-lg-6 col-sm-12">
           <h2 class="premierH">Notre crèche</h2>
-          <p class="paragraph">La crèche Timoun est une structure privée accueillant des
+          <p data-aos="zoom-in" class="paragraph">La crèche Timoun est une structure privée accueillant des
             enfants de 6 semaines à 4 ans non scolarisé en accueil régulier, occasionnel pour répondre à un besoin
             ponctuel. Une place d’urgence est disponible, ce qui permet aux parents de chercher sereinement une solution
             pérenne.
 
           </p>
-          <p class="paragraph">Le rôle de la micro-crèche est d’assurer la sécurité physique,
+          <p data-aos="zoom-in" class="paragraph">Le rôle de la micro-crèche est d’assurer la sécurité physique,
             affective et psychologique de tous les enfants. Accueillir chaque enfant et ses parents avec leurs
             particularités individuelles. Favoriser l’éveil, le bien-être et l’autonomie de l’enfant. Accompagner
             l’enfant dans ses premiers pas vers la socialisation.</p>
-          <p class="paragraph">La structure est un lieu de vie confortable d’une surface de 136 m²,
+          <p data-aos="zoom-in" class="paragraph">La structure est un lieu de vie confortable d’une surface de 136 m²,
             comprenant une grande salle de jeux de 60 m² où l’aménagement de l’espace a été entièrement pensé et aménagé
             afin de répondre aux besoins des enfants (coin bébé, coin bricolage, voitures, coin poupée, cuisine, espace
             lecture, espace pour les ateliers dirigés…)
@@ -149,7 +144,7 @@
       <div class="row">
         <div class="image-animaux">
           <img id="singe" src="img/singe.png" alt="singe">
-          <img id="crocodile" src="img/crocodile.png" alt="">
+          <img data-aos="zoom-in" id="crocodile" src="img/crocodile.png" alt="">
         </div>
         <div class="col-sm-12 col-lg-6 p-0 embed-responsive embed-responsive-4by3">
           <video autoplay loop muted id="video">
@@ -239,7 +234,7 @@
           <img src="img/adult-beautiful-brunette-1181686.png" class="img-fluid photoequipe" alt="">
         </div>
         <div class="col-sm-12 col-lg-6">
-          <h3 data-aos="zoom-in" class="troisiemeH pt-5">Martine Berthold</h3>
+          <h3 class="troisiemeH pt-5">Martine Berthold</h3>
           <p class="soustitre">Directrice</p>
           <p>49 ans, mariée et maman de 3 grands enfants dont des jumeaux.
 
@@ -329,11 +324,11 @@
 
           <div class="row">
 
-            <div class="col-md-4 col-lg-4 informations1">
+            <div class="col-md-6 col-lg-4 informations1">
 
               <div class="d-flex">
                 <img class="img-fluid facebook m-2" src="img/Circle-icons-smartphone.svg.png" alt="smartphone">
-                <p class="my-auto">01 43 19 54 76</p>
+                <a id="telephone" class="my-auto" href="tel:+33711223344">07 11 22 33 44</a>
               </div>
               <div class="d-flex">
                 <img class="img-fluid facebook m-2" src="img/map.png" alt="map">
@@ -346,7 +341,7 @@
 
             </div>
 
-            <div class="col-md-4 col-lg-4 informations2">
+            <div class="col-md-6 col-lg-4 informations2">
 
               <div class="d-flex">
                 <img src="img/iconfinder_mail_1055030.png" class="img-fluid facebook m-2" alt="">
@@ -392,15 +387,15 @@
 
 
 
-
+  <!--CONTACT-->
 
   <section id="contact">
-    <div class="container">
+    <div class="container mt-2">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-md-12 col-lg-8">
           <form>
             <div class="row">
-              <div class="col">
+              <div class="col-md-6">
                 <label for="inputName">Nom</label>
                 <input id="inputName" type="text" class="form-control mt-1 mb-2" placeholder="">
               </div>
@@ -434,19 +429,21 @@
             </div>
             <div class="row">
               <div class="col">
-                <button type="submit" class="btn btn-primary">Envoyer votre message</button>
+                <button type="submit" class="btn btn-primary mx-auto">Envoyer votre message</button>
               </div>
             </div>
           </form>
         </div>
 
-        <div class="col">
+        <div class="col-md-6 col-lg-4">
           <div>
-            <h2 class="premierH">N’hésitez pas à nous contacter pour vérifier les disponibilités.</h2>
+            <h2 id="disponibilite" class="premierH mt-4">N’hésitez pas à nous contacter pour vérifier les
+              disponibilités.</h2>
           </div>
           <div>
-            <h2>Modalités d'inscription & Tarification</h2>
-            <p id="paragraphmodalite">Pour bénéficier d’une place en crèche, votre employeur ou votre ville doit être réservataire au sein de
+            <h2 class="deuxiemeH">Modalités d'inscription & Tarification</h2>
+            <p id="paragraphmodalite">Pour bénéficier d’une place en crèche, votre employeur ou votre ville doit être
+              réservataire au sein de
               notre réseau. Cette crèche pratique la PSU (prestation de service unique) grâce à une convention signée
               avec
               la CAF. Votre participation familiale sera alors calculée sur vos revenus et nombre d’enfants comme dans
@@ -466,32 +463,23 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col-sm-12 col-md-4 text-center mt-3">
           <img class="facebook" src="img/iconfinder_facebook_834722.png" alt="">
           <img class="mail facebook" src="img/iconfinder_mail_1055030.png" alt="">
           <img class="facebook" src="img/iconfinder_twitter_circle_color_107170.png" alt="">
           <p>Timoun © - 2019 - Tous droits réservés</p>
         </div>
-        <div class="col text-center mt3 my-auto">
+        <div class="col col-md-4 text-center mt3 my-auto">
           <h3 id="Hfooter" class="premierH">Timoun</h3>
+          <p>Réalisation : Wyharm</p>
         </div>
-        <div class="col text-center mt-3">
+        <div class="col-sm-12 col-md-4 text-center mt-3">
           <img class="facebook" src="img/Caisse_d_allocations_familiales_france_logo.svg.png" alt="">
           <p>Crèche conventioné CAF</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <p>Réalisation : Wyharm</p>
-        </div>
-      </div>
+
     </div>
-
-
-
-
-
-
   </footer>
 
 
@@ -509,7 +497,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
