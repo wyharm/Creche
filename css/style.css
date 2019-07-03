@@ -289,6 +289,7 @@ body {
     bottom: 60%;
     left: 200px;
     z-index: 8;
+    display: none;
   }
   #image1{
     left: 35%;
