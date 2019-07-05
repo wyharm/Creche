@@ -2,27 +2,21 @@ AOS.init({
   duration: 1200,
 })
 
-/*const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.navliens');
-  
-  burger.addEventListener('click',()=> {
-    nav.classList.toggle('nav-active');
-  });
-}
-navSlide();*/
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
+
+function showNav() {
+  let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar1").style.top = "0";
+    document.getElementById("navbar1").style.opacity = "1";
   } else {
-    document.getElementById("navbar1").style.top = "-50px";
+    document.getElementById("navbar1").style.top = "-80px";
   }
   prevScrollpos = currentScrollPos;
 } 
 
-$(function(){ 
+
+  $(function(){ 
   var navMain = $(".navbar-collapse"); // avoid dependency on #id
   // "a:not([data-toggle])" - to avoid issues caused
   // when you have dropdown inside navbar
@@ -34,10 +28,6 @@ $(function(){
 
 
 
-
-
-function stopAnimate() {clearInterval(time);
-}
 
 let time;
 
@@ -56,6 +46,9 @@ function animateScript() {
 , interval );}
 
 
+function stopAnimate() {
+  clearInterval(time);
+}
 
 
 
@@ -66,7 +59,7 @@ let mq3 = window.matchMedia('@media (min-width: 576px) and (max-width: 767.98px)
 let mq4 = window.matchMedia('@media (max-width: 575.98px)');
 
 
-window.onscroll = function(ev) {
+function animationPets() {
   
   if((mq) && ((window.innerHeight + window.scrollY) >= document.body.offsetHeight)) {
     document.getElementById("image1").style.bottom='-7%';
@@ -80,6 +73,24 @@ window.onscroll = function(ev) {
   }
 
 }
+ 
+/* function hideNav(){
+  document.getElementById("navbar1").style.visibility = "hidden";
+}
 
+function fd(){
+  let scrolled = window.scrollY;
+  console.log(scrolled);
+
+  if(scrolled = 0){
+
+  setTimeout(hideNav(), 3000);
+}} */
+
+window.onscroll = function() {
+  showNav();
+  animationPets();
+  
+}
 
 
