@@ -67,8 +67,8 @@ function animationPets() {
     animateScript();
   }
   else{
-    document.getElementById("image1").style.bottom='-30%';
-    document.getElementById("image").style.bottom='-30%';
+    document.getElementById("image1").style.bottom='-40%';
+    document.getElementById("image").style.bottom='-40%';
     stopAnimate();
   }
 
@@ -92,5 +92,7 @@ window.onscroll = function() {
   animationPets();
   
 }
+
+
 
 
